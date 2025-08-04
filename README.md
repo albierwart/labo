@@ -1,5 +1,13 @@
 pwd: test1234=
 
+import { Router } from '@angular/router';
+
+constructor(private router: Router) {}
+
+navigateToEdit(userId: number) {
+  this.router.navigate(['users', userId, 'edit']);
+}
+
 # Labo
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
